@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.martinbreuss.langrey.MainActivity">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        android:background="#FFC107"
+        android:text="Listen to Music, Learn Languages"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <ImageView
+        android:id="@+id/note"
+        android:src="@drawable/note"
+        android:tint="#FFD54F"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_above="@id/more"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="#FFA000"
+        android:text="Sign up"
+        />
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/moreinfo"
+        android:padding="10dp"
+        android:background="#FFD54F"
+        android:text="Speak that novel that you always dreamt of"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <TextView
+        android:id="@+id/moreinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/website"
+        android:padding="10dp"
+        android:background="#FFC107"
+        android:text="In Spanish"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="#FFA000"
+        android:text="www.langrey.com"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"/>
+</RelativeLayout>
